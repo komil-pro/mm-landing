@@ -12,6 +12,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.mm-color1 {
+  color:#1b9bc5;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
   color: #000;
@@ -37,7 +41,7 @@ p, li, blockquote, label {
   font-size: 16px;
   letter-spacing: 0;
   line-height: 25px;
-  color: #808080;
+  color: #5c5c5c;
   margin-bottom: 0;
 }
 
@@ -378,7 +382,7 @@ button:focus,
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #000;
+  color: #02225b;
   padding-left: 20px;
   padding-right: 20px;
   line-height: 45px;

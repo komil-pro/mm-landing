@@ -1,31 +1,14 @@
 <!DOCTYPE html>
-
-<!--
- // WEBSITE: https://themefisher.com
- // TWITTER: https://twitter.com/themefisher
- // FACEBOOK: https://www.facebook.com/themefisher
- // GITHUB: https://github.com/themefisher/
--->
-
-<html lang="en">
+<html lang="en,ru,tj">
 <head>
-
-  <!-- Basic Page Needs
-  ================================================== -->
   <meta charset="utf-8">
-  <title>Small Apps | Bootstrap App Landing Template</title>
-
-  <!-- Mobile Specific Metas
-  ================================================== -->
+  <title>Мактаб Мобайл - цифровая образовательная платформа</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Bootstrap App Landing Template">
+  <meta name="description" content="Maktab Mobile landing page">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="author" content="Themefisher">
-  <meta name="generator" content="Themefisher Small Apps Template v1.0">
-
+  <meta name="author" content="RCAIDT">
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-  
+  <link rel="shortcut icon" type="image/x-icon" href="images/mm/mm_favicon.png" />
   <!-- PLUGINS CSS STYLE -->
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
@@ -33,78 +16,43 @@
   <link rel="stylesheet" href="plugins/slick/slick-theme.css">
   <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
   <link rel="stylesheet" href="plugins/aos/aos.css">
-
   <!-- CUSTOM CSS -->
   <link href="css/style.css" rel="stylesheet">
-
 </head>
 
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
 
 
+<!-- Выбор языка -->
+<div class="border-bottom" id="top_language_bar">
+	<div class="container p-1">
+	<div class="row" style="height: 24px;">
+		<div class="col-lg-12 text-right" style="font-size:13px;">
+		<a href="" style="margin-right: 10px;" id="tajik_lang" class="langPicker" langCode="tj">Тоҷикӣ</a>
+		<a href="" style="margin-right: 10px;" id="russian_lang" class="langPicker" langCode="ru">Русский</a>
+		<a href="" style="margin-right: 30px;" id="english_lang" class="langPicker" langCode="en">English</a>
+		</div>
+	</div>
+	</div>
+</div>
+
 <nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
   <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+    <a class="navbar-brand" href="index.html"><img src="images/mm/logo-horizontal.png" alt="logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="ti-menu"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown @@home">
-          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Home
-            <span><i class="ti-angle-down"></i></span>
-          </a>
-          <!-- Dropdown list -->
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item @@home1" href="index.html">Homepage</a></li>
-            <li><a class="dropdown-item" href="homepage-2.html">Homepage 2</a></li>
-            <li><a class="dropdown-item @@home3" href="homepage-3.html">Homepage 3</a></li>
-
-            <li class="dropdown dropdown-submenu dropright">
-              <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0301" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
-
-              <ul class="dropdown-menu" aria-labelledby="dropdown0301">
-                <li><a class="dropdown-item" href="index.html">Submenu 11</a></li>
-                <li><a class="dropdown-item" href="index.html">Submenu 12</a></li>
-              </ul>
-            </li>
-          </ul>
+		<li class="nav-item">
+          <a class="nav-link translate" href="index.html" lngTXT="Main">Главная</a>
         </li>
-        <li class="nav-item dropdown @@pages">
-          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Pages
-            <span><i class="ti-angle-down"></i></span>
-          </a>
-          <!-- Dropdown list -->
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item @@team" href="team.html">Team</a></li>
-            <li><a class="dropdown-item @@career" href="career.html">Career</a></li>
-            <li><a class="dropdown-item @@blog" href="blog.html">Blog</a></li>
-            <li><a class="dropdown-item @@blogSingle" href="blog-single.html">Blog Single</a></li>
-            <li><a class="dropdown-item @@privacy" href="privacy-policy.html">Privacy</a></li>
-            <li><a class="dropdown-item @@faq" href="FAQ.html">FAQ</a></li>
-            <li><a class="dropdown-item" href="sign-in.html">Sign In</a></li>
-            <li><a class="dropdown-item" href="sign-up.html">Sign Up</a></li>
-            <li><a class="dropdown-item" href="404.html">404</a></li>
-            <li><a class="dropdown-item" href="comming-soon.html">Coming Soon</a></li>
-
-            <li class="dropdown dropdown-submenu dropleft">
-              <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0501" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
-
-              <ul class="dropdown-menu" aria-labelledby="dropdown0501">
-                <li><a class="dropdown-item" href="index.html">Submenu 21</a></li>
-                <li><a class="dropdown-item" href="index.html">Submenu 22</a></li>
-              </ul>
-            </li>
-          </ul>
+        <li class="nav-item @@about">
+          <a class="nav-link active translate" href="about.html" lngTXT="About">О платформе</a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item @@contact">
-          <a class="nav-link" href="contact.html">Contact</a>
+		<li class="nav-item">
+          <a class="nav-link translate" href="https://school.maktabmobile.tj" target="_blank" lngTXT="WebApp">Веб-версия</a>
         </li>
       </ul>
     </div>
@@ -120,9 +68,9 @@
 		<div class="row">
 			<div class="col-sm-8 m-auto">
 				<!-- Page Title -->
-				<h1>About Small Apps</h1>
+				<h1 class="translate" lngTXT="aH1">Что такое «Мактаб мобайл»?</h1>
 				<!-- Page Description -->
-				<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta.</p>
+				<p class="mm-color1 translate" lngTXT="aD1" style="font-size:18px;">«Мактаб мобайл» является цифровой образовательной платформой для учителей, учеников и родителей. Она обладает простым и удобным пользовательским интерфейсом для обучения детей школьного возраста.</p>
 			</div>
 		</div>
 	</div>
@@ -140,10 +88,9 @@
 			<div class="col-lg-6 align-self-center">
 				<div class="content text-center text-lg-left">
 					<!-- Headline -->
-					<h2>This is our story.</h2>
+					<h2 class="translate" lngTXT="aH2">Возможности платформы</h2>
 					<!-- Story -->
-					<p>We’re here for those who refuse to settle. Who never stop moving forwards. Who continue to search for new ideas and better experiences in everything they do.
-					Because today’s hyper-connected world deserves a financial partner just as progressive.One that adapts to your needs, gives you control and constantly pushes you into new exciting spaces.</p>
+					<p class="translate" lngTXT="aD2">Платформа Мактаб Мобайл поддерживает различные форматы учебных материалов - текст, видео, электронные книги, интерактивный контент, позволяет использовать и обмениваться контентом в автономном режиме, поддерживает управление учебными курсами и заданиями, а также возможностью структурировать учебные курсы и материалы. Мактаб Мобайл работает как в онлайн, так и в оффлайн режимах на мобильных устройствах.</p>
 				</div>
 			</div>
 			<div class="col-lg-6 mt-4 mt-lg-0">
@@ -151,15 +98,19 @@
 				<div class="about-slider">
 					<!-- Story Image -->
 					<div class="item">
-						<img class="w-100" src="images/about/story-slider-01.jpg" alt="slider-image">
+						<img class="w-100" src="images/mm/about/story-slider-01.jpg" alt="slider-image">
 					</div>
 					<!-- Story Image -->
 					<div class="item">
-						<img class="w-100" src="images/about/story-slider-01.jpg" alt="slider-image">
+						<img class="w-100" src="images/mm/about/story-slider-02.jpg" alt="slider-image">
 					</div>
 					<!-- Story Image -->
 					<div class="item">
-						<img class="w-100" src="images/about/story-slider-01.jpg" alt="slider-image">
+						<img class="w-100" src="images/mm/about/story-slider-03.jpg" alt="slider-image">
+					</div>
+					<!-- Story Image -->
+					<div class="item">
+						<img class="w-100" src="images/mm/about/story-slider-04.jpg" alt="slider-image">
 					</div>
 				</div>
 			</div>
@@ -176,8 +127,9 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="section-title mb-0">
-					<h2>Why we created <a href="https://themefisher.com/products/small-apps-free-app-landing-page-template/">Small Apps</a></h2>
-					<p>Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Proin eget tortor risus. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+					<h2 class="translate" lngTXT="aH3">Почему разработана данная платформа?</a></h2>
+					<p class="translate" lngTXT="aD3">Идея создания такой платформы появилась еще в период пандемии "COVID-19", когда учителя и ученики столкнулись с трудностями в плане непрерывного обучения. Данная платформа призвана стать удобным и надежным инструментом для осуществления как дистанционного, так и смешанного обучения, она может стать отличным дополнением к основному учебному процессу. Платформа Мактаб Моайл позволяет решать ряд проблем, например: доступность учебных материалов, сокращение расходов связанных с их печатью и распространением, досуп к учебным материалам в удаленных уголках республики, возможность работы оффлан и сокращение расхода интернет-траффика. Кроме того, разработка платформы Мактаб Мобайл является одним из шагов на пути к реализации инициатив цифровой трансформации сферы образования.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -194,21 +146,22 @@
 			<div class="col-lg-6">
 				<div class="block">
 					<!-- Image -->
-					<img class="img-fluid" src="images/blog/post-01.jpg" alt="Story-Image">
+					<img class="img-fluid" src="images/mm/about/teachers-01.jpg" alt="Story-Image">
 					<!-- Heading -->
-					<h3>Our Story</h3>
+					<h3><strong class="translate" lngTXT="aH4">Учителям</strong></h3>
 					<!-- Story -->
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla consequat massa.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+					<p class="translate" lngTXT="aD4">Мактаб Мобайл цифровая обучающая платформа, которая позволяет учителям преподавать содержание уроков новыми и интересными способами. Платформа включает в себя уроки с различными мультимедийными элементами, включая видео, анимацию, иллюстрации и аудиозаписи. Уроки сопровождаются интерактивными элементами, которые требуют выполнения задания учащимися, для дальнейшего продвижения по темам. Предоставление увлекательного путешествия во время обучения, повышает вероятность того, что ученики найдут обучение приятным и запоминающимся.</p>
 				</div>
 			</div>
 			<div class="col-lg-6 mt-5 mt-lg-0">
 				<div class="block">
 					<!-- Image -->
-					<img class="img-fluid" src="images/blog/post-03.jpg" alt="Story-Image">
+					<img class="img-fluid" src="images/mm/about/students-01.jpg" alt="Story-Image">
 					<!-- Heading -->
-					<h3>What we do</h3>
+					<h3><strong class="translate" lngTXT="aH5">Ученикам и Родителям</strong></h3>
 					<!-- Story -->
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla consequat massa.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+					<p class="translate" lngTXT="aD5">Мактаб Мобайл для учеников предлагает практические упражнения, обучающие видеоролики, что позволяет учиться в собственном темпе в классе и за его пределами. Для родителей, которые ценят участие и активность в обучении своих детей, необходимо ознакомиться с цифровой образовательной платформой Мактаб Мобайл. Попытка помочь вашим детям с домашними заданиями может быть трудной, если вы не знаете, как ориентироваться в их системе цифрового обучения.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -216,180 +169,6 @@
 </section>
 <!--====  End of Create Story  ====-->
 
-
-<!--=====================================
-=            Quotes Slider              =
-======================================-->
-<section class="section quotes pt-0">
-	<div class="container">
-		<div class="row">
-			<div class="col-10 m-auto text-center">
-				<div class="quote-slider">
-					<div class="item mb-4">
-						<!-- Quote -->
-						<h2>Behind every great product, there is a great mind.</h2>
-						<!-- Company -->
-						<cite class="ml-0">-TechCrunch</cite>
-					</div>
-					<div class="item mb-4">
-						<!-- Quote -->
-						<h2>Behind every great product, there is a great mind.</h2>
-						<!-- Company -->
-						<cite class="ml-0">-TechCrunch</cite>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--====  End of Quotes Slider  ====-->
-
-<!--=====================================
-=            Client Slider              =
-======================================-->
-<section class="section clients bg-gray">
-	<div class="container">
-		<div class="row">
-			<div class="col-10 m-auto text-center">
-				<h3>Featured In</h3>
-				<div class="client-slider">
-					<div class="item mb-4">
-						<img class="m-auto" src="images/clients/business-finder.png" alt="business-finder">
-					</div>
-					<div class="item mb-4">
-						<img class="m-auto" src="images/clients/forbes.png" alt="forbes">
-					</div>
-					<div class="item mb-4">
-						<img class="m-auto" src="images/clients/venture-beat.png" alt="venture-beat">
-					</div>
-					<div class="item mb-4">
-						<img class="m-auto" src="images/clients/tech-crunch-new.png" alt="TechCrunch">
-					</div>
-					<div class="item mb-4">
-						<img class="m-auto" src="images/clients/forbes.png" alt="forbes">
-					</div>
-					<div class="item mb-4">
-						<img class="m-auto" src="images/clients/venture-beat.png" alt="venture-beat">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--====  End of Client Slider  ====-->
-
-<!--==============================
-=            Investors           =
-===============================-->
-<section class="section investors">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<div class="section-title">
-					<h2>Our Angel Investors</h2>
-					<p>Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia
-					eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat. </p>
-				</div>
-			</div>
-			<div class="col-xl-3 col-lg-4 col-sm-6">
-				<div class="block text-center">
-					<!-- Investor Image -->
-					<div class="image shadow hover-zoom">
-						<img class="img-fluid" src="images/team/marketing-team-01.jpg" alt="investor">
-					</div>
-					<!-- Company -->
-					<h3>Spider Web</h3>
-					<!--  -->
-					<p>Investor</p>
-				</div>
-			</div>
-			<div class="col-xl-3 col-lg-4 col-sm-6">
-				<div class="block text-center">
-					<!-- Investor Image -->
-					<div class="image shadow hover-zoom">
-						<img class="img-fluid" src="images/team/marketing-team-02.jpg" alt="investor">
-					</div>
-					<!-- Company -->
-					<h3>Spider Web</h3>
-					<!--  -->
-					<p>Investor</p>
-				</div>
-			</div>
-			<div class="col-xl-3 col-lg-4 col-sm-6">
-				<div class="block text-center">
-					<!-- Investor Image -->
-					<div class="image shadow hover-zoom">
-						<img class="img-fluid" src="images/team/marketing-team-03.jpg" alt="investor">
-					</div>
-					<!-- Company -->
-					<h3>Spider Web</h3>
-					<!--  -->
-					<p>Investor</p>
-				</div>
-			</div>
-			<div class="col-xl-3 col-lg-4 col-sm-6">
-				<div class="block text-center">
-					<!-- Investor Image -->
-					<div class="image shadow hover-zoom">
-						<img class="img-fluid" src="images/team/design-team-01.jpg" alt="investor">
-					</div>
-					<!-- Company -->
-					<h3>Spider Web</h3>
-					<!--  -->
-					<p>Investor</p>
-				</div>
-			</div>
-			<div class="col-xl-3 col-lg-4 col-sm-6">
-				<div class="block text-center">
-					<!-- Investor Image -->
-					<div class="image shadow hover-zoom">
-						<img class="img-fluid" src="images/team/design-team-02.jpg" alt="investor">
-					</div>
-					<!-- Company -->
-					<h3>Spider Web</h3>
-					<!--  -->
-					<p>Investor</p>
-				</div>
-			</div>
-			<div class="col-xl-3 col-lg-4 col-sm-6">
-				<div class="block text-center">
-					<!-- Investor Image -->
-					<div class="image shadow hover-zoom">
-						<img class="img-fluid" src="images/team/design-team-03.jpg" alt="investor">
-					</div>
-					<!-- Company -->
-					<h3>Spider Web</h3>
-					<!--  -->
-					<p>Investor</p>
-				</div>
-			</div>
-			<div class="col-xl-3 col-lg-4 col-sm-6">
-				<div class="block text-center">
-					<!-- Investor Image -->
-					<div class="image shadow hover-zoom">
-						<img class="img-fluid" src="images/team/design-team-01.jpg" alt="investor">
-					</div>
-					<!-- Company -->
-					<h3>Spider Web</h3>
-					<!--  -->
-					<p>Investor</p>
-				</div>
-			</div>
-			<div class="col-xl-3 col-lg-4 col-sm-6">
-				<div class="block text-center">
-					<!-- Investor Image -->
-					<div class="image shadow hover-zoom">
-						<img class="img-fluid" src="images/team/marketing-team-02.jpg" alt="investor">
-					</div>
-					<!-- Company -->
-					<h3>Spider Web</h3>
-					<!--  -->
-					<p>Investor</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
 
 <!--===============================
 =            Our Story            =
@@ -400,10 +179,17 @@
 			<div class="col-lg-6 align-self-center">
 				<div class="content text-center text-lg-left">
 					<!-- Headline -->
-					<h2>This is our story.</h2>
+					<h2 class="translate" lngTXT="aH6">Основные возможности:</h2>
 					<!-- Story -->
-					<p>We’re here for those who refuse to settle. Who never stop moving forwards. Who continue to search for new ideas and better experiences in everything they do.
-					Because today’s hyper-connected world deserves a financial partner just as progressive.One that adapts to your needs, gives you control and constantly pushes you into new exciting spaces.</p>
+					<p>
+					<ul>
+						<li class="translate" lngTXT="aL1"><strong>Электронная библиотека: </strong>доступ к учебным ресурсам, электронным книгам, интерактивным упражнениям и видеоурокам. <a href="https://fs.rcict.net/index.php/s/MXGTGDef5kRzm78">Ссылка на электронные учебные материалы (электронные книги, видеоуроки и др.)</a>.</li>
+						<li class="translate" lngTXT="aL2"><strong>Управление учебными курсами: </strong>создание курсов обучения (предметы или темы), добавление учебных модулей, добавление цифровых учебных материалов (текст, книги, интерактивные задания, видеоуроки), добавление заданий, возможности обсуждения и предоставления отзывов, отслеживание прогресса и оценка результатов учащихся и др.</li>
+						<li class="translate" lngTXT="aL3"><strong>Поддержка автономной работы: </strong>работа в онлайн или оффлайн режиме. Все результаты и материалы обучения автоматически синхронизируются при подключении к сети.</li>
+						<li class="translate" lngTXT="aL4"><strong>Посещаемость: </strong>Управление сведениями о посещаемости учащихся.</li>
+						<li class="translate" lngTXT="aL5"><strong>Простота управления контентом: </strong>легко добавлять, удалять и редактировать образовательный контент. Поддержка контента в различных форматах (видео, аудио, EPUB, PDF и xAPI).</li>
+					</ul>
+					</p>
 				</div>
 			</div>
 			<div class="col-lg-6 mt-5 mt-lg-0">
@@ -411,15 +197,15 @@
 				<div class="about-slider">
 					<!-- Story Image -->
 					<div class="item">
-						<img class="w-100" src="images/about/story-slider-01.jpg" alt="slider-image">
+						<img class="w-100" src="images/mm/about/feature-slider-01.png" alt="slider-image">
 					</div>
 					<!-- Story Image -->
 					<div class="item">
-						<img class="w-100" src="images/about/story-slider-01.jpg" alt="slider-image">
+						<img class="w-100" src="images/mm/about/feature-slider-02.png" alt="slider-image">
 					</div>
 					<!-- Story Image -->
 					<div class="item">
-						<img class="w-100" src="images/about/story-slider-01.jpg" alt="slider-image">
+						<img class="w-100" src="images/mm/about/feature-slider-03.png" alt="slider-image">
 					</div>
 				</div>
 			</div>
@@ -437,12 +223,11 @@
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<!-- Hire Title -->
-				<h2>We are hunting Genius Developers</h2>
+				<h2 class="translate" lngTXT="aH7">Лучший способ повысить результаты обучения</h2>
 				<!-- Job Description -->
-				<p>Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque
-					in ipsum id orci porta dapibus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+				<p class="translate" lngTXT="aD7">Мактаб Мобайл предлагает практические упражнения, обучающие видеоролики и панель мониторинга обучения, которая позволяет ученикам учиться даже за пределами класса. С помощью платформы Мактаб Мобайл ваше взаимодействие с учителями, доступ к преподавательским и обучающим ресурсам становятся неограниченными, школа становиться мобильной и может стать доступной на ваших компьютерах, планшетах и смартфонах.</p>
 				<!-- Action Button -->
-				<a href="contact.html" class="mt-3 btn btn-main-md">Join the team</a>
+				<a href="https://play.google.com/store/apps/details?id=tj.maktabmobile.app" class="mt-3 btn btn-main-md translate" lngTXT="aB7">Начать работу с платформой!</a>
 			</div>
 		</div>
 	</div>
@@ -460,17 +245,17 @@
       <div class="row">
         <div class="col-lg-4 col-md-12 m-md-auto align-self-center">
           <div class="block">
-            <a href="index.html"><img src="images/logo-alt.png" alt="footer-logo"></a>
+            <a href="index.html"><img src="images/mm/logo-horizontal-white.png" alt="footer-logo"></a>
             <!-- Social Site Icons -->
             <ul class="social-icon list-inline">
               <li class="list-inline-item">
-                <a href="https://www.facebook.com/themefisher"><i class="ti-facebook"></i></a>
+                <a href="https://www.facebook.com/uniceftajikistan/"><i class="ti-facebook"></i></a>
               </li>
               <li class="list-inline-item">
-                <a href="https://twitter.com/themefisher"><i class="ti-twitter"></i></a>
+                <a href="https://x.com/unicef_tjk/"><i class="ti-twitter"></i></a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.instagram.com/themefisher/"><i class="ti-instagram"></i></a>
+                <a href="https://www.instagram.com/uniceftajikistan/"><i class="ti-instagram"></i></a>
               </li>
             </ul>
           </div>
@@ -478,50 +263,22 @@
         <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
           <div class="block-2">
             <!-- heading -->
-            <h6>Product</h6>
+            <h6 class="translate" lngTXT="mainH11">Партнёрские платформы</h6>
             <!-- links -->
             <ul>
-              <li><a href="team.html">Teams</a></li>
-              <li><a href="blog.html">Blogs</a></li>
-              <li><a href="FAQ.html">FAQs</a></li>
+              <li><a href="https://marifat.tj">Marifat.tj</a></li>
+              <li><a href="https://dl.rcict.net">"Такмил"</a></li>
+              <li><a href="https://tomaktabi.tj">tomaktabi.tj</a></li>
             </ul>
           </div>
         </div>
-        <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
+        <div class="col-lg-3 col-md-3 col-6 mt-5 mt-lg-0">
           <div class="block-2">
             <!-- heading -->
-            <h6>Resources</h6>
+            <h6 class="translate" lngTXT="mainH12">Контакты</h6>
             <!-- links -->
             <ul>
-              <li><a href="sign-up.html">Singup</a></li>
-              <li><a href="sign-in.html">Login</a></li>
-              <li><a href="blog.html">Blog</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
-          <div class="block-2">
-            <!-- heading -->
-            <h6>Company</h6>
-            <!-- links -->
-            <ul>
-              <li><a href="career.html">Career</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="team.html">Investor</a></li>
-              <li><a href="privacy.html">Terms</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
-          <div class="block-2">
-            <!-- heading -->
-            <h6>Company</h6>
-            <!-- links -->
-            <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="team.html">Team</a></li>
-              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li>E-mail: <a href="mailto:markazi-tik@maorif.tj">markazi-tik@maorif.tj</a></li>
             </ul>
           </div>
         </div>
@@ -529,7 +286,7 @@
     </div>
   </div>
   <div class="text-center bg-dark py-4">
-    <small class="text-secondary">Copyright &copy; <script>document.write(new Date().getFullYear())</script>. Designed &amp; Developed by <a href="https://themefisher.com/">Themefisher</a></small class="text-secondary">
+    <small class="text-secondary"><script>document.write(new Date().getFullYear())</script> @ <span  class="translate" lngTXT="footer1">Maktab Mobile is Open-Source Software</span><a href="https://github.com/UstadMobile/UstadMobile/tree/release-maktab-mobile">.</a></small>
   </div>
 </footer>
 
@@ -546,11 +303,9 @@
   <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
   <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
   <script src="plugins/aos/aos.js"></script>
-  <!-- google map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
-  <script src="plugins/google-map/gmap.js"></script>
   
   <script src="js/script.js"></script>
+  <script src="js/translation.js"></script>
 </body>
 
 </html>
